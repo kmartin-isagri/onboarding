@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/server"
+  },
+  "packageManager": "yarn@4.10.3",
+  "dependencies": {
+    "graphql": "^16.12.0",
+    "graphql-yoga": "^5.18.0",
+    "uniqid": "^5.4.0"
+  }
+}
