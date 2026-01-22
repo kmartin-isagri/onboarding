@@ -6,6 +6,11 @@
           transition="scale-transition" width="200" />
       </div>
       <v-spacer></v-spacer>
+
+      <v-btn to="/" variant="text">Home</v-btn>
+      <v-btn :to="{ name: 'exercice-1' }" variant="text">Exo 1</v-btn>
+      <v-btn :to="{ name: 'exercice-2' }" variant="text">Exo 2</v-btn>
+      <v-btn :to="{ name: 'exercice-3' }" variant="text">Exo 3</v-btn>
     </v-app-bar>
 
     <v-main>
