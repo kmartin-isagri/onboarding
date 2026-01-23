@@ -1,10 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark flat>
-      <div class="d-flex align-center">
-        <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="./assets/bobbee_hrz.png"
-          transition="scale-transition" width="200" />
-      </div>
+
       <v-spacer></v-spacer>
 
       <v-btn to="/" variant="text">Home</v-btn>
@@ -12,6 +9,7 @@
       <v-btn :to="{ name: 'exercice-2' }" variant="text">Exo 2</v-btn>
       <v-btn :to="{ name: 'exercice-3' }" variant="text">Exo 3</v-btn>
       <v-btn :to="{ name: 'exercice-4' }" variant="text">Exo 4</v-btn>
+      <v-btn :to="{ name: 'exercice-5' }" variant="text">Exo 5</v-btn>
     </v-app-bar>
 
     <v-main>

@@ -28,6 +28,7 @@ export const schema = createSchema({
       name: String!
       url: String!
       likeCount: Int!
+      liked: Boolean!
       messages: [Message!]!
     }
 
@@ -52,7 +53,9 @@ export const schema = createSchema({
     },
 
     Album: {},
-    Picture: {},
+    Picture: {
+      liked: (photo) => Boolean(photo.likeCount),
+    },
     Message: {},
   },
 });

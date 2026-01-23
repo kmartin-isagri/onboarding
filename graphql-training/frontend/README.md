@@ -1,117 +1,42 @@
-# Welcome to Bobbee
+# frontend2
 
-### Project setup
-```zsh
-$ yarn install
-```
-<br>
+This template should help get you started developing with Vue 3 in Vite.
 
-### Starting Project
-```
-$ yarn serve
-```
----
-## Cours
+## Recommended IDE Setup
 
-[VueJS Class Component](https://class-component.vuejs.org/guide/class-component.html)
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-[Vuetify](https://vuetifyjs.com/en/)
+## Recommended Browser Setup
 
----
-## Exercices
-<br>
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-### Exercice 1
+## Type Support for `.vue` Imports in TS
 
-Créer un *v-text-field* et afficher le nombre de caractère contenu dans le *v-text-field* juste a coté
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-<br>
+## Customize configuration
 
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-### Exercice 2
+## Project Setup
 
-Créer un bouton qui incrémente un compteur, et qui s'affiche sur la page.
-Créer un autre bouton qui décrémente de compteur
-
-<br>
-
-### Exercice 3
-
-A partir du compteur de l'exercice précédent, créer une boucle qui affiche l'index. 
-Si l'index est divisible par 3, afficher "Bob"; si il est divisible par 5, afficher "bee"; et si il est divisible par 3 et 5, afficher "Bobbee"
-
-<br>
-
-### Exercice 4
-
-Avec le JSON ci-dessous, créer un album photo type Instagram, ou l'on peut liker et commenter les différentes photo
-
-```js
-album = {
-    "name": "Mon album photo",
-    "other": "Your Name",
-    "photos": [
-        {
-            "name": "Plante",
-            "url": "https://images.pexels.com/photos/993626/pexels-photo-993626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "1"
-        },
-        {
-            "name": "Koala",
-            "url": "https://images.pexels.com/photos/7243591/pexels-photo-7243591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "2"
-        },
-        {
-            "name": "Tortue",
-            "url": "https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "3"
-        },
-        {
-            "name": "Montagne",
-            "url": "https://images.pexels.com/photos/633198/pexels-photo-633198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "4"
-        },
-        {
-            "name": "Ville",
-            "url": "https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "5"
-        },
-        {
-            "name": "Théatre",
-            "url": "https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "6"
-        },
-        {
-            "name": "Foret",
-            "url": "https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "7"
-        },
-        {
-            "name": "Ciel",
-            "url": "https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "8"
-        },
-        {
-            "name": "Fruits",
-            "url": "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "9"
-        },
-        {
-            "name": "Lion",
-            "url": "https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "10"
-        },
-        {
-            "name": "Café",
-            "url": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "id": "12"
-        }
-    ]
-}
+```sh
+npm install
 ```
 
-<br>
+### Compile and Hot-Reload for Development
 
-### Exercice 5
+```sh
+npm run dev
+```
 
-Si ce n'est pas fait, à partir de l'exercice précédent, convertir les photos en composant (Chaque composent intègre le nom, le photo, les commentaires, ainsi que le fait qu'elle soit liké ou non)
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
