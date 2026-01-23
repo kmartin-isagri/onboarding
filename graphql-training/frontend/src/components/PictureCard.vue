@@ -14,7 +14,7 @@
         @click="$emit('like:click', photo)"></v-btn>
     </v-card-actions>
 
-    <div v-if="showMessages" class="message-section">
+    <v-card-text v-if="showMessages" class="message-section">
       <div v-for="message in photo.messages" :key="message.id" class="message-item">
         {{ message.content }}
         <v-divider class="my-2"></v-divider>
@@ -25,7 +25,7 @@
           autofocus></v-textarea>
         <v-btn class="mt-2" type="submit" color="black" block>Envoyer</v-btn>
       </v-form>
-    </div>
+    </v-card-text>
 
   </v-card>
 </template>
